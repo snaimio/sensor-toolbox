@@ -1,14 +1,45 @@
-# 🧰 Sensor ToolBox — Advanced Sensor & Navigation Suite
+<div align="center">
 
-## 📱 Mobile Application Development ()
+# 🧰 Sensor ToolBox
+### Native Android Advanced Sensor, Telemetry & Navigation Suite
 
-A feature-complete, modern Android application showcasing **16+ sensor-driven utilities, geodetic inspection tools, and interactive OpenStreetMap navigation systems** built natively with Kotlin, Google Play Services, Material Design 3, and osmdroid.
+[![Android](https://img.shields.io/badge/Android-SDK%2024%2B-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.0%2B-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org/)
+[![Play Services](https://img.shields.io/badge/Google%20Play%20Services-Location-4285F4?style=for-the-badge&logo=googleplay&logoColor=white)](https://developers.google.com/android/guides/overview)
+[![osmdroid](https://img.shields.io/badge/Mapping-osmdroid-00C853?style=for-the-badge)](https://github.com/osmdroid/osmdroid)
+[![Material 3](https://img.shields.io/badge/UI-Material%20Design%203-8B5CF6?style=for-the-badge)](https://m3.material.io/)
+[![License](https://img.shields.io/badge/License-MIT-CEFF00?style=for-the-badge&logoColor=black)](LICENSE)
+
+<br/>
+
+**A feature-complete, production-grade native Android application showcasing 16+ hardware sensor utilities, geodetic telemetry tools, and interactive OpenStreetMap navigation systems.**
+
+<br/>
+
+[Key Enhancements](#-key-enhancements) •
+[Tools Directory](#-comprehensive-tools-directory) •
+[Physics & Math](#-physics-algorithms--engineering-principles) •
+[Architecture](#-architecture--tech-stack) •
+[Installation](#-how-to-build-and-run) •
+[License](#-license)
+
+</div>
+
+<br/>
 
 ---
 
-## 🌟 What's New in | Feature Area | Key Enhancements |
+## 📌 Technical Overview
+
+**Sensor ToolBox** is a native Android hardware telemetry and mapping suite built with Kotlin. It interfaces directly with on-device hardware sensors (Accelerometer, Gyroscope, Magnetometer, Barometer, and GPS/GNSS) via `SensorManager` and `FusedLocationProviderClient` to provide real-time environmental inspection, motion tracking, and street-level navigation.
+
+---
+
+## 🌟 Key Enhancements
+
+| Feature Area | Key Engineering Implementation |
 | :--- | :--- |
-| 🗺️ **Map Location (`MapActivity`)** | **OpenStreetMap Nominatim Landmark Geocoding** (resolves POIs like *CN Tower* to exact coordinates), **OSRM Street Routing Engine**, **20 FPS Animated Traveling Beacon Pulse** along road polylines, **Multi-Layer Map Switcher** (Mapnik Standard, OpenTopoMap, HikeBike), **Compass Azimuth Lock** using hardware rotation vectors, and **Astronomical Solar Ray Vectors** (Sunrise, Live Sun, Sunset). |
+| 🗺️ **Map Location (`MapActivity`)** | **OpenStreetMap Nominatim Landmark Geocoding** (resolves POIs like *CN Tower* to exact geodetic coordinates), **OSRM Street Routing Engine**, **20 FPS Animated Traveling Beacon Pulse** along road polylines, **Multi-Layer Map Switcher** (Mapnik Standard, OpenTopoMap, HikeBike), **Compass Azimuth Lock** using hardware rotation vectors, and **Astronomical Solar Ray Vectors** (Sunrise, Live Sun, Sunset). |
 | 📡 **Live Location (`LiveLocationActivity`)** | **Turn-by-Turn Road Navigation Cockpit** with dynamic maneuver icons (`⬆️`, `↗️`, `↖️`, `➡️`, `⬅️`, `🏁`), next-turn distance countdowns, street instructions, **Follow-Me Auto-Tracking Camera**, and **Live Geodetic Telemetry** (DMS coordinates, elevation, speed, accuracy badge). |
 | 🏃 **Fitness Tracker (`FitnessTrackerActivity`)** | Live workout telemetry measuring velocity, cumulative geodesic distance, **running pace (min/km)**, **MET energy expenditure (calories burned)**, duration timer, and breadcrumb route mapping on OpenStreetMap. |
 | 🥾 **Trail Tracker (`TrailTrackerActivity`)** | Enhanced hiking trail recorder with real-time polyline rendering on OpenStreetMap/OpenTopoMap, start/end pins, elevation gain/loss, and one-tap trail sharing. |
@@ -145,6 +176,7 @@ SensorToolBox/
 │   └── build.gradle.kts                          # App Build Configuration & Dependencies
 ├── build.gradle.kts                              # Root Build Configuration
 ├── settings.gradle.kts                           # Gradle Project Settings
+├── LICENSE                                       # MIT License
 └── README.md                                     # Project Documentation
 ```
 
@@ -155,12 +187,12 @@ SensorToolBox/
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/snaimio/sensor-toolbox.git
-   cd AndroidApp3
+   cd sensor-toolbox
    ```
 
 2. **Open in Android Studio**:
    * Open Android Studio -> Select **Open an Existing Project**.
-   * Choose the cloned `AndroidApp3` (or `SensorToolBox`) project root directory.
+   * Choose the cloned `sensor-toolbox` project root directory.
 
 3. **Sync Gradle**:
    * Allow Gradle to download dependencies (`osmdroid`, `play-services-location`, `material`).
@@ -171,3 +203,19 @@ SensorToolBox/
      ```bash
      ./gradlew assembleDebug
      ```
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## 👨‍💻 Author
+
+**Sheikh Naim**  
+*Mobile & Full-Stack Web Developer*  
+- **LinkedIn**: [linkedin.com/in/snaimio](https://www.linkedin.com/in/snaimio)  
+- **GitHub**: [@snaimio](https://github.com/snaimio)  
+- **Portfolio**: [snaimio.github.io](https://snaimio.github.io)
