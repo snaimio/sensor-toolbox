@@ -30,7 +30,7 @@ import com.sheikhnaim.sensortoolbox.data.DashboardDataBuilder
 import com.sheikhnaim.sensortoolbox.data.ToolAdapter
 import com.sheikhnaim.sensortoolbox.data.ToolItem
 
-// Import all tools (existing from Assignment 5)
+// Import all sensor and telemetry tools
 import com.sheikhnaim.sensortoolbox.astronomy.MoonPhaseActivity
 import com.sheikhnaim.sensortoolbox.astronomy.SunTrackerActivity
 import com.sheikhnaim.sensortoolbox.detection.MetalDetectorActivity
@@ -138,8 +138,8 @@ class DashboardActivity : AppCompatActivity() {
      * ============================================================
      * MENU ITEMS:
      * ============================================================
-     * - Live Location (NEW for Assignment 6)
-     * - Map Location (NEW for Assignment 6)
+     * - Live Location
+     * - Map Location
      *
      * NOTE: Compass is already available as a tool in the dashboard
      * so we don't add it to the menu to avoid duplication.
@@ -169,7 +169,7 @@ class DashboardActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             // ============================================================
-            // OPTION 1: Live Location (NEW for Assignment 6)
+            // OPTION 1: Live Location
             // ============================================================
             R.id.action_live_location -> {
                 val intent = Intent(this, LiveLocationActivity::class.java)
@@ -178,7 +178,7 @@ class DashboardActivity : AppCompatActivity() {
             }
 
             // ============================================================
-            // OPTION 2: Map Location (NEW for Assignment 6)
+            // OPTION 2: Map Location
             // ============================================================
             R.id.action_map -> {
                 val intent = Intent(this, MapActivity::class.java)
