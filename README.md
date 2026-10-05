@@ -1,14 +1,12 @@
 # 🧰 Sensor ToolBox — Advanced Sensor & Navigation Suite
 
-## 📱 Mobile Application Development (Assignment 6)
+## 📱 Mobile Application Development ()
 
 A feature-complete, modern Android application showcasing **16+ sensor-driven utilities, geodetic inspection tools, and interactive OpenStreetMap navigation systems** built natively with Kotlin, Google Play Services, Material Design 3, and osmdroid.
 
 ---
 
-## 🌟 What's New in Assignment 6
-
-| Feature Area | Key Enhancements |
+## 🌟 What's New in | Feature Area | Key Enhancements |
 | :--- | :--- |
 | 🗺️ **Map Location (`MapActivity`)** | **OpenStreetMap Nominatim Landmark Geocoding** (resolves POIs like *CN Tower* to exact coordinates), **OSRM Street Routing Engine**, **20 FPS Animated Traveling Beacon Pulse** along road polylines, **Multi-Layer Map Switcher** (Mapnik Standard, OpenTopoMap, HikeBike), **Compass Azimuth Lock** using hardware rotation vectors, and **Astronomical Solar Ray Vectors** (Sunrise, Live Sun, Sunset). |
 | 📡 **Live Location (`LiveLocationActivity`)** | **Turn-by-Turn Road Navigation Cockpit** with dynamic maneuver icons (`⬆️`, `↗️`, `↖️`, `➡️`, `⬅️`, `🏁`), next-turn distance countdowns, street instructions, **Follow-Me Auto-Tracking Camera**, and **Live Geodetic Telemetry** (DMS coordinates, elevation, speed, accuracy badge). |
@@ -156,7 +154,7 @@ SensorToolBox/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/snaimio/AndroidApp3.git
+   git clone https://github.com/snaimio/sensor-toolbox.git
    cd AndroidApp3
    ```
 
